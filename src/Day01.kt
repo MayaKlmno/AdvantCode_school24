@@ -12,6 +12,7 @@ fun main() {
             totalDistance = i + rightNums.get(currentIndex)
         }
         return totalDistance
+
     }
 
     // Read the input from the `src/Day01.txt` file.
