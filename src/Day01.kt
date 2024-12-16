@@ -2,19 +2,22 @@ import kotlin.math.absoluteValue
 
 fun main() {
     fun part1(input: List<String>): Int {
+        // this is my code:
         var leftNums = mutableListOf<Int>()
         var rightNums = mutableListOf<Int>()
         rightNums.sorted()
         leftNums.sorted()
-        // use this section from the video Kotlin by JetBrains//
+
+        // This next section is from the video Kotlin by JetBrains//
         val lines = readInput("day01.txt")
-        val (leftNums, rightNums ) = lines.map { line ->
+        val (left, right) = lines.map { line ->
             val first = line.substringBefore(" ").toInt()
             val second = line.substringAfterLast(" ").toInt()
             first to second
         }.unzip()
-        // end of the code used from the video kotlin by jetbrains day 1//
+        // the line above this is the end of the code used from the video kotlin by jetbrains day 1//
 
+        // this is my code:
         var totalDistance = 0
         for (i in leftNums.indices){
             //var currentIndex = leftNums.indexOf(i)
